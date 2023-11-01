@@ -291,7 +291,7 @@ const MainComponent = () => {
           </div>
         </section>
 
-        <section className='fixed' id='fixed' data-classname='fixed'>
+        <section >
           <div className='bg-white'>
             <div className='flex justify-center gap-5 max-w-screen-2xl min-h-[90vh] mx-auto'>
               <div className='flex items-center'>

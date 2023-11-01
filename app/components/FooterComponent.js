@@ -5,30 +5,30 @@ const FooterComponent = () => {
   return (
     <>
       <footer className="relative">
-        <div className="bg-blue-900 ">
-          <div className="flex max-w-screen-2xl min-h-[60vh] mx-auto py-20 px-10 gap-5 ">
-            <div className="flex w-full">
+        <div className="bg-blue-900 py-10 ">
+          <div className="flex lg:max-w-screen-2xl lg:min-h-[60vh] lg:mx-auto lg:py-20 lg:px-10 gap-5 px-5">
+            <div className="lg:flex w-full">
               <div className="w-full  border-black">
                 <div className="w-full">
                   <p className="text-white mb-5 w-full">
                     JOSEFINA
                   </p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 pb-10">
                   <div className=" rounded-md bg-white hover:bg-cyan-600 p-1 cursor-pointer transform scale-100 hover:scale-90 transition-transform duration-300 ">
-                    <AiOutlineInstagram className='text-black font-bold hover:text-white text-2xl' />
+                    <AiOutlineInstagram className='text-black font-bold hover:text-white lg:text-2xl' />
                   </div>
                   <div className=" rounded-md bg-white hover:bg-cyan-600 p-1 cursor-pointer transform scale-100 hover:scale-90 transition-transform duration-300 ">
-                    <AiOutlineYoutube className='text-black font-bold hover:text-white text-2xl' />
+                    <AiOutlineYoutube className='text-black font-bold hover:text-white lg:text-2xl' />
                   </div>
                   <div className=" rounded-md bg-white hover:bg-cyan-600 p-1 cursor-pointer transform scale-100 hover:scale-90 transition-transform duration-300 ">
-                    <BiLogoTiktok className='text-black font-bold hover:text-white text-2xl' />
+                    <BiLogoTiktok className='text-black font-bold hover:text-white lg:text-2xl' />
                   </div>
                 </div>
               </div>
-              <div className=" gap-5 flex w-full">
+              <div className="pb-5 lg:gap-5 flex w-full">
                 <div className="">
-                  <p className="text-white text-sm font-bold mb-3">Comenzá a aprender</p>
+                  <p className="text-white text-xs lg:text-sm font-bold mb-3">Comenzá a aprender</p>
                   <p className="text-gray-500 font-semibold">
                     Cursos
                   </p>
@@ -37,7 +37,7 @@ const FooterComponent = () => {
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-white text-sm font-bold mb-3">Nosotros</p>
+                  <p className="text-white text-xs lg:text-sm font-bold mb-3">Nosotros</p>
                   <p className="text-gray-500 font-semibold">
                     Prensa
                   </p>
@@ -55,7 +55,7 @@ const FooterComponent = () => {
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-white text-sm font-bold mb-3">Ayuda</p>
+                  <p className="text-white text-xs lg:text-sm font-bold mb-3">Ayuda</p>
                   <p className="text-gray-500 font-semibold">
                     Políticas de reembolsos
                   </p>
@@ -66,7 +66,7 @@ const FooterComponent = () => {
 
               </div>
               <div className="w-full flex justify-center">
-                <img className="h-20 flex justify-end" src="scaner.jpg" alt="" />
+                <img className="lg:h-20 h-10 flex justify-end" src="scaner.jpg" alt="" />
               </div>
             </div>
           </div>

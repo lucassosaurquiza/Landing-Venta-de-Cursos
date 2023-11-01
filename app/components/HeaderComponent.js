@@ -14,16 +14,16 @@ const HeaderComponent = () => {
             <Link href="/">
               <p className="text-gray-900 font-bold hover:text-gray-500">Blog</p>
             </Link>
-            <Link href="/contacto">
+            <Link href="/">
               <p className="text-gray-900 hover:text-gray-500 font-bold">Recursos</p>
             </Link>
-            <Link href="/nosotros">
+            <Link href="/">
               <p className="text-gray-900 hover:text-gray-500 font-bold">Cursos</p>
             </Link>
-            <Link href="/nosotros">
+            <Link href="/">
               <p className="text-gray-900 hover:text-gray-500 font-bold">Carreras</p>
             </Link>
-            <Link href="/nosotros">
+            <Link href="/">
               <p className="text-gray-900 hover:text-gray-500 font-bold">Testimonios</p>
             </Link>
           </div>
@@ -35,10 +35,10 @@ const HeaderComponent = () => {
           <Link href="/">
             <p className="text-gray-900 hover:text-gray-500 font-bold">Inicio de Sesion</p>
           </Link>
-          <Link href="/contacto">
+          <Link href="/">
             <p className="text-gray-900 hover:text-gray-500 font-bold">Ayuda</p>
           </Link> 
-          <Link href="/nosotros">
+          <Link href="/">
             <FaShoppingCart className="text-gray-900 hover:text-gray-500" />
           </Link>
         </div>

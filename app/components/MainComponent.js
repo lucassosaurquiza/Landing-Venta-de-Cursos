@@ -300,6 +300,7 @@ const MainComponent = () => {
           </div>
         </section>
 
+        {/* YA ESTA HECHO RESPONSIVE */}
         <section className='sticky top-1 z-1 shadow-2xl'>
           <div className='bg-white '>
             <div className='lg:flex justify-center  lg:gap-20 lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto'>
@@ -332,6 +333,8 @@ const MainComponent = () => {
             </div>
           </div>
         </section>
+
+        {/* YA ESTA HECHO RESPONSIVE */}
         <section className='sticky top-1 z-2 shadow-2xl'>
           <div className='bg-white '>
             <div className='lg:flex justify-center  lg:gap-20 lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto'>
@@ -366,7 +369,7 @@ const MainComponent = () => {
         </section>
 
 
-
+        {/* YA ESTA HECHO RESPONSIVE */}
         <section className='sticky top-1 z-3 shadow-2xl'>
           <div className='bg-white  shadow-xl'>
             <div className='lg:flex justify-center  lg:gap-20 lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto'>
@@ -400,7 +403,7 @@ const MainComponent = () => {
           </div>
         </section>
 
-        
+        {/* YA ESTA HECHO RESPONSIVE */}
         <section className='relative shadow-2xl'>
           <div className='bg-white'>
             <div className='lg:flex justify-center  lg:gap-20 lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto '>
@@ -429,93 +432,95 @@ const MainComponent = () => {
           </div>
         </section>
 
+        {/* YA ESTA HECHO RESPONSIVE */}
         <section className='relative'>
-          <div className='flex justify-center bg-cover bg-center p-20' style={{
+          <div className='flex justify-center bg-cover bg-center p-10 lg:p-20' style={{
             backgroundImage: 'url("imagen-fondo.jpg")'
           }}>
-            <div className='max-w-screen-3xl min-h-[90vh] mx-auto'>
-              <div className='flex mb-3 justify-center transform gap-3'>
-                <AiFillStar className='text-yellow-400 text-xl' />
-                <AiFillStar className='text-yellow-400 text-xl' />
-                <AiFillStar className='text-yellow-400 text-xl' />
-                <AiFillStar className='text-yellow-400 text-xl' />
-                <AiFillStar className='text-yellow-400 text-xl' />
+            <div className='lg:max-w-screen-3xl lg:min-h-[90vh] lg:mx-auto'>
+              <div className='flex mb-3 justify-center  gap-3'>
+                <AiFillStar className='text-yellow-400 lg:text-xl' />
+                <AiFillStar className='text-yellow-400 lg:text-xl' />
+                <AiFillStar className='text-yellow-400 lg:text-xl' />
+                <AiFillStar className='text-yellow-400 lg:text-xl' />
+                <AiFillStar className='text-yellow-400 lg:text-xl' />
               </div>
               <div className='flex-col text-center'>
-                <p className='text-3xl font-semibold mb-3'>Alumnos de todo el mundo con <br /> <b> resultados reales</b></p>
-                <p className='font-semibold text-md '>Mirá los testimonios de emprendedores como vos.</p>
+                <p className='lg:text-3xl font-semibold mb-3'>Alumnos de todo el mundo con <br /> <b> resultados reales</b></p>
+                <p className='font-semibold lg:text-md hidden lg:block'>Mirá los testimonios de emprendedores como vos.</p>
               </div>
-              <div className='bg-white rounded-xl p-5 relative shadow-2xl mt-72 pb-20'>
-                <div className='bg-blue-700 rounded-full w-4 absolute top-36 left-3 cursor-pointer'>
+              <div className='bg-white rounded-xl lg:px-20 px-10 py-5 relative shadow-2xl mt-60 lg:mt-72 lg:pb-20 lg:pt-20'>
+                <div className='bg-blue-700 rounded-full w-4 absolute top-14 left-2 lg:top-36 lg:left-3 cursor-pointer'>
                   <IoMdArrowDropleft className='text-white' />
                 </div>
-                <div className='bg-blue-700 rounded-full w-4  absolute top-36 right-3 cursor-pointer'>
+                <div className='bg-blue-700 rounded-full w-4  absolute top-14 right-2 lg:top-36 lg:right-3 cursor-pointer'>
                   <IoMdArrowDropright className='text-white' />
                 </div>
-                <div className='flex w-full'>
-                  <img className='h-52' src="testimonio.jpg" alt="" />
-                  <img className='h-52' src="testimonio2.jpg" alt="" />
+                <div className='flex w-full gap-5'>
+                  <img className='lg:h-40 h-20' src="testimonio.jpg" alt="" />
+                  <img className='hidden lg:block lg:h-40 h-20' src="testimonio2.jpg" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        {/* YA ESTA HECHO RESPONSIVE */}
         <section className='relative'>
           <div className='bg-gray-100'>
-            <div className='pt-20 flex-col max-w-screen-2xl min-h-[90vh] mx-auto'>
-              <p className='text-3xl flex justify-center items-center  mb-6'>
+            <div className='pt-20 flex-col lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto'>
+              <p className='lg:text-3xl text-xl flex justify-center items-center  mb-6'>
                 <b className='mr-2'>Recursos</b> gratuitos
               </p>
-              <p className='flex justify-center items-center'>Accedé gratis a recursos de Marketing Digital y redes sociales.</p>
+              <p className='flex justify-center items-center text-md text-center'>Accedé gratis a recursos de Marketing Digital y redes sociales.</p>
 
 
-              <div className='mt-8 max-w-screen-xl mx-auto'>
-                <div className='flex gap-8 w-full mb-10'>
-                  <div className='bg-white px-12 py-6 flex shadow-xl rounded-lg w-full'>
-                    <div className='flex items-center gap-10  cursor-pointer'>
-                      <img className='h-10' src="calendar.png" alt="" />
+              <div className='mt-8 lg:max-w-screen-xl lg:mx-auto'>
+                <div className='lg:flex gap-8 w-full mb-10'>
+                  <div className='bg-white px-5 py-3 lg:px-12 lg:py-6 flex shadow-xl rounded-lg w-full mb-5 md:px-10 md:py-5 '>
+                    <div className='flex items-center lg:gap-10 gap-5 md:gap-20 cursor-pointer'>
+                      <img className='lg:h-10 h-8' src="calendar.png" alt="" />
                       <div className='flex-col'>
-                        <p>
+                        <p className='text-xs'>
                           Gestión de redes sociales
                         </p>
-                        <b> Calendario Editorial para Redes Sociales 2023</b>
+                        <b className='text-sm'> Calendario Editorial para Redes Sociales 2023</b>
                       </div>
                     </div>
                   </div>
-                  <div className='bg-white px-12 py-6 flex shadow-xl rounded-lg w-full'>
-                    <div className='flex items-center gap-10  cursor-pointer'>
-                      <img className='h-10' src="phone.png" alt="" />
+                  <div className='bg-white px-5 py-3 lg:px-12 lg:py-6 flex shadow-xl rounded-lg w-full mb-5 md:px-10 md:py-5 '>
+                    <div className='flex items-center lg:gap-10 gap-5 md:gap-20 cursor-pointer'>
+                      <img className='lg:h-10 h-8' src="phone.png" alt="" />
                       <div className='flex-col'>
-                        <p>
+                        <p className='text-xs'>
                           Instagram
                         </p>
-                        <b> Plantilla planificadora de feed en Canva</b>
+                        <b className='text-sm'> Plantilla planificadora de feed en Canva</b>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className='flex gap-8 w-full'>
-                  <div className='bg-white px-12 py-6 flex shadow-xl rounded-lg w-full'>
-                    <div className='flex items-center gap-10  cursor-pointer'>
-                      <img className='h-10' src="lapiz.png" alt="" />
+                <div className='lg:flex gap-8 w-full pb-20'>
+                  <div className='bg-white px-5 py-3 lg:px-12 lg:py-6 flex shadow-xl rounded-lg w-full mb-5 md:px-10 md:py-5'>
+                    <div className='flex items-center lg:gap-10 gap-5  md:gap-20   cursor-pointer'>
+                      <img className='lg:h-10 h-8' src="lapiz.png" alt="" />
                       <div className='flex-col'>
-                        <p>
+                        <p className='text-xs'>
                           Textos de venta poderosos
                         </p>
-                        <b>Kit de Plantillas de Copywriting para vender más</b>
+                        <b className='text-sm'>Kit de Plantillas de Copywriting para vender más</b>
                       </div>
                     </div>
                   </div>
-                  <div className='bg-white px-12 py-6 flex shadow-xl rounded-lg w-full'>
-                    <div className='flex items-center gap-10 cursor-pointer'>
-                      <img className='h-10' src="tempera.png" alt="" />
+                  <div className='bg-white px-5 py-3 lg:px-12 lg:py-6 flex shadow-xl rounded-lg w-full mb-5 md:px-10 md:py-5'>
+                    <div className='flex items-center lg:gap-10 gap-5  md:gap-20  cursor-pointer'>
+                      <img className='lg:h-10 h-8' src="tempera.png" alt="" />
                       <div className='flex-col'>
-                        <p>
+                        <p className='text-xs'>
                           Creación de contenido
                         </p>
-                        <b>50 plantillas de Canva para Instagram​</b>
+                        <b className='text-sm'>50 plantillas de Canva para Instagram​</b>
                       </div>
                     </div>
                   </div>
@@ -525,18 +530,19 @@ const MainComponent = () => {
           </div>
         </section>
 
+        {/* YA ESTA HECHO RESPONSIVE */}
         <section className='relative'>
-          <div className='bg-blue-900'>
+          <div className='bg-blue-900 py-10'>
             <div className='flex w-full'>
-              <div className=' w-full'>
+              <div className='lg:block hidden w-full'>
                 <img src="left.png" alt="" />
               </div>
               <div className=' w-full flex justify-center items-center flex-col'>
-                <p className='flex justify-center items-center text-white text-xl mb-5'>
+                <p className='flex justify-center items-center text-white lg:text-xl mb-5 '>
                   Nuestro <b className='text-cyan-500 mr-1 ml-1'>newsletter</b> oficial
                 </p>
-                <p className='flex justify-center items-center text-white text-2xl mb-10'>
-                  Recibí <b className=' mr-1 ml-1'>novedades de Marketing Digital</b> gratis
+                <p className='flex justify-center items-center text-center text-white lg:text-2xl mb-10'>
+                  Recibí novedades de Marketing Digital gratis
                 </p>
                 <div className='flex justify-center items-center'>
                   <button className='bg-pink-600 text-white px-6 py-2 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
@@ -544,7 +550,7 @@ const MainComponent = () => {
                   </button>
                 </div>
               </div>
-              <div className=' w-full flex justify-end'>
+              <div className='hidden w-full lg:flex justify-end'>
                 <img src="right.png" alt="" />
               </div>
             </div>
@@ -553,34 +559,33 @@ const MainComponent = () => {
 
         <section className='relative'>
           <div className='bg-gray-100 pb-20'>
-            <div className='max-w-screen-2xl min-h-[90vh] mx-auto  pt-40'>
+            <div className='lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto lg:pt-40 py-10'>
               <div className=''>
                 <div className='flex justify-center mb-5'>
-                  <button className='text-white bg-cyan-400 px-4 py-1 rounded-md'>
+                  <button className='text-white bg-cyan-400 px-4 py-1 rounded-md text-xs'>
                     Artículos recientes
                   </button>
                 </div>
-                <p className='flex justify-center text-4xl mb-20'>
-                  Blog <b className='ml-2'>de Marketing y RRSS</b>
+                <p className='flex justify-center pb-10 lg:text-4xl lg:pb-20'>
+                  Blog de Marketing y RRSS
                 </p>
-                <div className='flex mx-20 gap-6 justify-center'>
-
+                <div className='lg:flex mx-20 gap-6 justify-center'>
                   <div className='shadow-lg hover:shadow-2xl transition duration-300 ease-in-out'>
-                    <div className='max-w-xs cursor-pointer relative' >
-                      <img className=' rounded-t-md' src="plantilla.jpg" alt="" />
+                    <div className='lg:max-w-xs cursor-pointer relative' >
+                      <img className='rounded-t-md' src="plantilla.jpg" alt="" />
                       <div className='bg-pink-500 text-white rounded-full p-1 absolute top-3 right-2 font-bold text-xs px-3'>
                         INSTAGRAM
                       </div>
                     </div>
-                    <div className=' max-w-xs bg-white p-8 rounded-b-md'>
-                      <p className='font-bold mb-5 cursor-pointer'>
+                    <div className=' lg:max-w-xs bg-white lg:p-8 rounded-b-md'>
+                      <p className='font-bold mb-5 cursor-pointer text-xs'>
                         Plantilla para crear un <br /> reporte redes sociales <br /> [GRATIS]
                       </p>
                       <p className='font-semibold text-xs mb-20'>
                         Si sos un profesional del marketing digital o un propietario de negocio, un reporte de
                       </p>
                       <div className='flex items-center gap-4 cursor-pointer'>
-                        <p className='text-pink-500 '>
+                        <p className='text-pink-500 text-xs'>
                           Leer artículo
                         </p>
                         <MdKeyboardArrowRight className='text-pink-500' />
@@ -640,29 +645,30 @@ const MainComponent = () => {
           </div>
         </section>
 
+        {/* YA ESTA HECHO RESPONSIVE */}
         <section className='relative' >
-          <div className='bg-blue-600'>
-            <div className='max-w-screen-2xl min-h-[20vh] mx-auto flex items-center justify-center px-28'>
+          <div className='bg-blue-600 py-16'>
+            <div className='lg:max-w-screen-2xl lg:min-h-[20vh] lg:mx-auto lg:flex items-center justify-center lg:px-28 md:px-16'>
               <div className='w-full'>
-                <p className='text-white text-2xl font-bold'>
+                <p className='text-white lg:text-2xl font-bold text-center pb-10'>
                   ¡Aprendé con nuestras <br />
                   redes sociales!
                 </p>
               </div>
-              <div className='gap-4 flex w-full'>
-                <div className='flex w-full text-center items-center  border-white border-4 rounded-full p-3 px-5 gap-8 transform scale-100 hover:scale-90 transition-transform duration-300 cursor-pointer'>
+              <div className='lg:gap-4 lg:flex w-full'>
+                <div className='flex w-full text-center items-center justify-center border-white border-4 rounded-full mb-5 p-3 px-5 gap-8 transform scale-100 hover:scale-90 transition-transform duration-300 cursor-pointer'>
                   <AiOutlineInstagram className='text-white font-bold' />
                   <p className='text-white font-bold'>
                     Instagram
                   </p>
                 </div>
-                <div className='flex w-full text-center items-center  border-white border-4 rounded-full p-3 px-5  gap-8 transform scale-100 hover:scale-90 transition-transform duration-300 cursor-pointer'>
+                <div className='flex w-full text-center items-center justify-center border-white border-4 rounded-full mb-5 p-3 px-5  gap-8 transform scale-100 hover:scale-90 transition-transform duration-300 cursor-pointer'>
                   <AiOutlineYoutube className='text-white font-bold' />
                   <p className='text-white font-bold'>
                     Youtube
                   </p>
                 </div>
-                <div className='flex w-full text-center items-center  border-white border-4 rounded-full p-3 px-5  gap-8 transform scale-100 hover:scale-90 transition-transform duration-300 cursor-pointer'>
+                <div className='flex w-full text-center items-center justify-center border-white border-4 rounded-full mb-5 p-3 px-5  gap-8 transform scale-100 hover:scale-90 transition-transform duration-300 cursor-pointer'>
                   <BiLogoTiktok className='text-white font-bold' />
                   <p className='text-white font-bold'>
                     TikTok

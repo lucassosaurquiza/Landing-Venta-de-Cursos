@@ -10,45 +10,45 @@ import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io'
 
 const MainComponent = () => {
 
-
-
-
   return (
     <>
       <main className="">
-        <div className="flex items-center max-w-screen-2xl min-h-[90vh] mx-auto">
-          <div className=" w-[50%]">
+        {/* YA ESTA HECHO RESPONSIVE */}
+        <div className="md:flex md:items-center md:max-w-screen-2xl md:min-h-[90vh] md:mx-auto">
+          <div className="md:w-[50%]">
             <div className="">
               <div className="mb-5" >
-                <div className="">
-                  <h1 className="text-7xl leading-none tracking-tighter font-light">LEARN <b className='font-bold'>SPANISH</b> ONLINE</h1>
+                <div className="mt-10 justify-center flex">
+                  <h1 className=" md:text-7xl leading-none tracking-tighter font-light">LEARN <b className='font-bold'>SPANISH</b> ONLINE</h1>
                 </div>
               </div>
               <div className="" >
-                <p className="text-left text-gray-800 font-semibold leading-[1.4em] tracking-tighter text-xl">
+                <p className="text-center md:text-left text-gray-800 font-semibold leading-[1.4em] tracking-tighter md:text-xl">
                   Aprendé español para negocios, redes sociales, con cursos online, prácticos y certificados.
                 </p>
               </div>
-              <div className="flex mb-10 mt-10 mr-5">
-                <a className="w-full justify-center flex items-center text-white border-2 bg-pink-600 rounded-full text-lg font-semibold tracking-tighter py-3 px-6 transform scale-100 hover:scale-90 transition-transform duration-300" href="#">
-                  <span className="text-sm tracking-widest">Ver cursos online</span>
-                </a>
+              <div className="md:flex justify-center mb-10 mt-10 mr-5">
+                <div className='flex text-center justify-center mb-5 w-full'>
+                  <a className="max-w-sm lg:w-full justify-center flex items-center text-white border-2 bg-pink-600 rounded-full  font-semibold tracking-tighter py-2 px-3 md:py-3 md:px-6 transform scale-100 hover:scale-90 transition-transform duration-300" href="#">
+                    <span className="text-xs md:text-sm tracking-widest w-full">Ver cursos online</span>
+                  </a>
+                </div>
 
-                <a className="justify-center flex items-center cursor-pointer font-karla text-blue-900  rounded-full text-lg font-semibold tracking-tighter py-3 px-6  w-full transform scale-100 hover:scale-90 transition-transform duration-300" >
+                <a className="justify-center flex items-center cursor-pointer font-karla text-blue-900  rounded-full font-semibold tracking-tighter py-3 px-6  w-full transform scale-100 hover:scale-90 transition-transform duration-300" >
                   <div className="justify-center flex items-center gap-2">
                     <div className='bg-gray-900 rounded-full text-white'>
                       <MdNavigateNext />
                     </div>
-
-                    <span className="tracking-widest text-sm w-full">Recursos gratis</span>
+                    <span className="tracking-normal md:tracking-widest text-sm w-full flex justify-center">Recursos gratis</span>
                   </div>
                 </a>
               </div>
 
+              <div className='md:hidden'>
+                <img src="/profile.webp" className="rounded-full mx-auto my-auto mb-10" />
+              </div>
 
-
-
-              <section className="flex items-center">
+              <section className="hidden md:flex items-center">
                 <div className='w-full'>
                   <p className="text-md w-full text-gray-800 font-normal">
                     Elegidos por miles de  emprendedores
@@ -61,11 +61,10 @@ const MainComponent = () => {
             </div>
           </div>
 
-
-          <div className="flex justify-center items-center ">
+          <div className="hidden md:flex justify-center items-center ">
             <div className="flex justify-center items-center">
               <div className="flex justify-center items-center">
-                <div className="elementor-widget-container text-center">
+                <div className="text-center">
                   <img src="/profile.webp" className="rounded-full mx-auto my-auto mb-10" />
                   <p className='text-gray-800 font-semibold leading-[1.4em] tracking-tighter text-2xl'>¡Hola! Mi nombre es Josefina. I’m your Spanish teacher.</p>
                 </div>
@@ -74,279 +73,292 @@ const MainComponent = () => {
           </div>
         </div>
 
-        <section style={{ backgroundColor: '#00A8F4' }} className='py-10'>
-          <div className='flex justify-center gap-40'>
+        {/* YA ESTA HECHO RESPONSIVE */}
+        <section style={{ backgroundColor: '#00A8F4' }} className='md:hidden py-3'>
+        </section >
+
+        {/* YA ESTA HECHO RESPONSIVE */}
+        <section style={{ backgroundColor: '#00A8F4' }} className='hidden lg:flex lg:justify-center py-10'>
+          <div className='flex justify-center gap-20 lg:gap-40 px-10'>
             <div className=' text-center flex-col justify-center items-center'>
-              <p className='text-white mb-5'>"Una academia para aprender todo sobre <br /> el mundo digital"</p>
-              <img className='h-20 w-full flex my-auto' src="la-nacion.webp" alt="" />
+              <p className='text-white mb-5 text-xs'>"Una academia para aprender todo sobre <br /> el mundo digital"</p>
+              <img className='lg:h-20 w-full flex my-auto' src="la-nacion.webp" alt="" />
             </div>
             <div className=' text-center flex-col justify-center items-center'>
-              <p className='text-white mb-5'> "Una de las escuelas de Marketing Digital <br /> más influyentes de la Argentina"</p>
-              <img className='h-20 w-full my-auto' src="clarin.webp" alt="" />
+              <p className='text-white mb-5 text-xs'> "Una de las escuelas de Marketing Digital <br /> más influyentes de la Argentina"</p>
+              <img className='lg:h-20 w-full my-auto' src="clarin.webp" alt="" />
             </div>
             <div className=' text-center flex-col justify-center items-center'>
-              <p className='text-white mb-5'>"Paula Luzzi es experta de marketing en <br /> redes sociales"</p>
-              <img className='h-20 w-full my-auto' src="para.webp" alt="" />
+              <p className='text-white mb-5 text-xs'>"Paula Luzzi es experta de marketing en <br /> redes sociales"</p>
+              <img className='lg:h-20 w-full my-auto' src="para.webp" alt="" />
             </div>
           </div>
         </section>
 
-        <section className='mt-36 w-full'>
-          <div className='flex-col items-center max-w-screen-2xl min-h-[90vh] mx-auto mb-24'>
-            <div className='flex w-full mb-10'>
-              <div>
-                <div className='flex gap-3'>
-                  <div className='bg-gray-900 flex items-center rounded-full p-2 h-full'>
+        {/* YA ESTA HECHO RESPONSIVE */}
+        <section className='mt-20 md:mt-36 w-full'>
+          <div className='flex-col items-center md:max-w-screen-2xl md:min-h-[90vh] md:mx-auto mb-24 px-4'>
+            <div className='md:flex p-5 w-full mb-10'>
+              <div className=''>
+                <div className='flex gap-3 justify-center'>
+                  <div className='bg-gray-900 flex items-center rounded-full p-1 md:p-2 h-full'>
                     <GiGraduateCap className='text-white w-full h-full' />
                   </div>
-                  <p className='text-gray-900 w-full font-semibold text-lg mb-5'>Adquiri habilidades digitales</p>
+                  <p className='text-gray-900 w-full font-semibold md:text-lg text-sm mb-5'>Adquiri habilidades digitales</p>
                 </div>
-                <p className='text-4xl'>
+                <p className='md:text-4xl text-lg'>
                   La escuela para aprender Marketing Digital con <b>cursos prácticos y sin horarios</b>
                 </p>
               </div>
-              <div className='flex-col text-right'>
-                <p className='mb-8 text-xl'>
+              <div className='hidden md:flex md:flex-col text-right'>
+                <p className='mb-8 md:text-xl'>
                   Unite a miles de alumnos de todo el mundo para vender más por Internet.
                 </p>
-                <button className='bg-blue-950 text-white px-12 py-4 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
+                <div className='flex justify-center'>
+                  <button className=' bg-blue-950 text-white text-xs px-4 py-2 md:px-12 md:py-4 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
+                    Ver todos los cursos
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD */}
+            <div className='lg:flex gap-3 w-full'>
+              <div className='bg-white rounded-2xl p-5 lg:max-w-xl w-full mb-5'>
+                <div className='flex justify-end'>
+                  <AiFillStar className='text-yellow-400' />
+                </div>
+                <div className='flex gap-5 mb-5 w-full'>
+                  <img className='lg:h-full h-16 w-16' src="mg-image.png" alt="" />
+                  <p className='lg:text-2xl text-sm text-gray-900 font-semibold w-full items-center flex'>Community <br className='hidden lg:block' /> Manager</p>
+                </div>
+                <div className='w-full'>
+                  <p className='lg:leading-8 leading-6 text-sm mb-5 lg:mb-10'>
+                    Aprendé a gestionar redes sociales de tu marca o las de tus clientes en Instagram, TikTok, Facebook y Twitter.
+                  </p>
+                </div>
+                <div className='justify-center flex lg:flex text-center mb-8 w-full'>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3 '>
+                    <AiFillClockCircle className='w-3 h-3  lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      8 hs.
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3 '>
+                    <BiSolidMessage className='w-3 h-3  lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      9 mód.
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3'>
+                    <AiFillCheckSquare className='w-3 h-3  lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      Cert.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p className='font-bold text-2xl md:text-4xl flex justify-center'>
+                    $5.190
+                  </p>
+                </div>
+                <div className="flex-col md:flex w-full mt-8 mr-5">
+                  <a className="w-full justify-center flex items-center text-white border-2 bg-pink-600  rounded-full  font-semibold mb-3 py-1 px-1 md:py-3 md:px-6 transform scale-100 hover:scale-90 hover:bg-gray-900 transition-transform duration-300" href="#">
+                    <span className="text-xs md:tracking-widest w-full justify-center flex items-center">Comprar Cursos</span>
+                  </a>
+
+                  <a className="justify-center  flex items-center cursor-pointer font-karla text-blue-900 border rounded-full text-lg font-semibold tracking-tighter py-1 px-1 md:py-3 md:px-6  w-full transform scale-100 hover:scale-90 transition-transform duration-300" >
+                    <div className="justify-center flex items-center md:gap-2 w-full">
+                      <div className='bg-gray-900 rounded-full text-white justify-center flex'>
+                        <MdNavigateNext className='justify-center flex w-full' />
+                      </div>
+
+                      <span className=" justify-center flex tracking-widest text-sm w-full">Detalles</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div className='bg-white rounded-2xl p-5 lg:max-w-xl w-full mb-5'>
+                <div className='flex justify-end'>
+                  <AiFillStar className='text-yellow-400' />
+                </div>
+                <div className='flex gap-5 mb-5 w-full'>
+                  <img className='lg:h-20 h-16 w-16' src="mg-image.png" alt="" />
+                  <p className='lg:text-2xl text-sm text-gray-900 font-semibold w-full items-center flex'>Community <br className='hidden lg:block' /> Manager</p>
+                </div>
+                <div className='w-full'>
+                  <p className='lg:leading-8 leading-6 text-sm mb-5 lg:mb-10'>
+                    Aprendé a gestionar redes sociales de tu marca o las de tus clientes en Instagram, TikTok, Facebook y Twitter.
+                  </p>
+                </div>
+                <div className='justify-center flex lg:flex text-center mb-8 w-full'>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3 '>
+                    <AiFillClockCircle className='w-3 h-3   lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      8 hs.
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3 '>
+                    <BiSolidMessage className='w-3 h-3   lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      9 mód.
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3'>
+                    <AiFillCheckSquare className='w-3 h-3   lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      Cert.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p className='font-bold text-2xl md:text-4xl flex justify-center'>
+                    $5.190
+                  </p>
+                </div>
+                <div className="flex-col md:flex w-full mt-8 mr-5">
+                  <a className="w-full justify-center flex items-center text-white border-2 bg-pink-600  rounded-full  font-semibold mb-3 py-1 px-1 md:py-3 md:px-6 transform scale-100 hover:scale-90 hover:bg-gray-900 transition-transform duration-300" href="#">
+                    <span className="text-xs md:tracking-widest w-full justify-center flex items-center">Comprar Cursos</span>
+                  </a>
+
+                  <a className="justify-center  flex items-center cursor-pointer font-karla text-blue-900 border rounded-full text-lg font-semibold tracking-tighter py-1 px-1 md:py-3 md:px-6  w-full transform scale-100 hover:scale-90 transition-transform duration-300" >
+                    <div className="justify-center flex items-center md:gap-2 w-full">
+                      <div className='bg-gray-900 rounded-full text-white justify-center flex'>
+                        <MdNavigateNext className='justify-center flex w-full' />
+                      </div>
+
+                      <span className=" justify-center flex tracking-widest text-sm w-full">Detalles</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div className='bg-white rounded-2xl p-5 lg:max-w-xl w-full mb-5'>
+                <div className='flex justify-end'>
+                  <AiFillStar className='text-yellow-400' />
+                </div>
+                <div className='flex gap-5 mb-5 w-full'>
+                  <img className='lg:h-20 h-16 w-16' src="mg-image.png" alt="" />
+                  <p className='lg:text-2xl text-sm text-gray-900 font-semibold w-full items-center flex'>Community <br className='hidden lg:block' /> Manager</p>
+                </div>
+                <div className='w-full'>
+                  <p className='lg:leading-8 leading-6 text-sm mb-5 lg:mb-10'>
+                    Aprendé a gestionar redes sociales de tu marca o las de tus clientes en Instagram, TikTok, Facebook y Twitter.
+                  </p>
+                </div>
+                <div className='justify-center flex lg:flex text-center mb-8 w-full'>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3 '>
+                    <AiFillClockCircle className='w-3 h-3   lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      8 hs.
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3 '>
+                    <BiSolidMessage className='w-3 h-3   lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      9 mód.
+                    </p>
+                  </div>
+                  <div className='flex items-center justify-center gap-2 w-full lg:w-1/3'>
+                    <AiFillCheckSquare className='w-3 h-3   lg:w-5 lg:h-5' />
+                    <p className='text-xs lg:text-sm'>
+                      Cert.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p className='font-bold flex justify-center text-2xl md:text-4xl'>
+                    $5.190
+                  </p>
+                </div>
+                <div className="flex-col md:flex w-full mt-8 mr-5">
+                  <a className="w-full justify-center flex items-center text-white border-2 bg-pink-600  rounded-full  font-semibold mb-3 py-1 px-1 md:py-3 md:px-6 transform scale-100 hover:scale-90 hover:bg-gray-900 transition-transform duration-300" href="#">
+                    <span className="text-xs md:tracking-widest w-full justify-center flex items-center">Comprar Cursos</span>
+                  </a>
+
+                  <a className="justify-center  flex items-center cursor-pointer font-karla text-blue-900 border rounded-full text-lg font-semibold tracking-tighter py-1 px-1 md:py-3 md:px-6  w-full transform scale-100 hover:scale-90 transition-transform duration-300" >
+                    <div className="justify-center flex items-center md:gap-2 w-full">
+                      <div className='bg-gray-900 rounded-full text-white justify-center flex'>
+                        <MdNavigateNext className='justify-center flex w-full' />
+                      </div>
+
+                      <span className=" justify-center flex tracking-widest text-sm w-full">Detalles</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div className='md:hidden flex justify-center'>
+                <button className=' bg-blue-950 text-white text-xs px-4 py-2 md:px-12 md:py-4 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
                   Ver todos los cursos
                 </button>
               </div>
             </div>
 
-            {/* CARD */}
-            <div className='flex gap-3 w-full'>
-              <div className='bg-white rounded-2xl p-5 max-w-xl w-full'>
-                <div className='flex justify-end'>
-                  <AiFillStar className='text-yellow-400' />
-                </div>
-                <div className='flex gap-5 mb-5 w-full'>
-                  <img className='h-20' src="mg-image.png" alt="" />
-                  <p className='text-2xl text-gray-900 font-semibold'>Community <br /> Manager</p>
-                </div>
-                <div>
-                  <p className='leading-8 mb-10'>
-                    Aprendé a gestionar redes sociales de tu marca o las de tus clientes en Instagram, TikTok, Facebook y Twitter.
-                  </p>
-                </div>
-                <div className='flex  mb-8 w-full'>
-                  <div className='flex items-center gap-2 w-full'>
-                    <AiFillClockCircle className='' />
-                    <p className=''>
-                      8 horas
-                    </p>
-                  </div>
-                  <div className='flex items-center gap-2  w-full'>
-                    <BiSolidMessage className='' />
-                    <p className=''>
-                      9 modulos
-                    </p>
-                  </div>
-                  <div className='flex items-center gap-2 w-full'>
-                    <AiFillCheckSquare className='' />
-                    <p className=''>
-                      Certificado
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p className='font-bold text-4xl'>
-                    $5.190
-                  </p>
-                </div>
-                <div className="flex w-full mt-8 mr-5">
-                  <a className="w-full justify-center flex items-center text-white border-2 bg-pink-600  rounded-full text-lg font-semibold tracking-tighter py-3 px-6 transform scale-100 hover:scale-90 hover:bg-gray-900 transition-transform duration-300" href="#">
-                    <span className="text-sm tracking-widest">Comprar Cursos</span>
-                  </a>
-
-                  <a className="justify-center flex items-center cursor-pointer font-karla text-blue-900  rounded-full text-lg font-semibold tracking-tighter py-3 px-6  w-full transform scale-100 hover:scale-90 transition-transform duration-300" >
-                    <div className="justify-center flex items-center gap-2">
-                      <div className='bg-gray-900 rounded-full text-white'>
-                        <MdNavigateNext />
-                      </div>
-
-                      <span className="tracking-widest text-sm w-full">Detalles</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div className='bg-white rounded-2xl p-5 max-w-xl w-full'>
-                <div className='flex justify-end'>
-                  <AiFillStar className='text-yellow-400' />
-                </div>
-                <div className='flex gap-5 mb-5'>
-                  <img className='h-20' src="music.png" alt="" />
-                  <p className='text-2xl text-gray-900 font-semibold'>
-                    Marketing de <br /> contenido</p>
-                </div>
-                <div>
-                  <p className='leading-8 mb-10'>
-                    Aprendé a diseñar tu estrategia y crear contenido para tus redes sociales, blog, sitio web y anuncios.
-                  </p>
-                </div>
-                <div className='flex gap-5 mb-8'>
-                  <div className='flex items-center gap-2'>
-                    <AiFillClockCircle />
-                    <p>
-                      9 horas
-                    </p>
-                  </div>
-                  <div className='flex items-center gap-2'>
-                    <BiSolidMessage />
-                    <p>
-                      6 modulos
-                    </p>
-                  </div>
-                  <div className='flex items-center gap-2'>
-                    <AiFillCheckSquare />
-                    <p>
-                      Certificado
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p className='font-bold text-4xl'>
-                    $5.260
-                  </p>
-                </div>
-                <div className="flex w-full mt-8 mr-5">
-                  <a className="w-full justify-center flex items-center text-white border-2 bg-pink-600 rounded-full text-lg font-semibold tracking-tighter py-3 px-6 transform scale-100 hover:scale-90 hover:bg-gray-900 transition-transform duration-300" href="#">
-                    <span className="text-sm tracking-widest">Comprar Cursos</span>
-                  </a>
-
-                  <a className="justify-center flex items-center cursor-pointer font-karla text-blue-900  rounded-full text-lg font-semibold tracking-tighter py-3 px-6  w-full transform scale-100 hover:scale-90 transition-transform duration-300" >
-                    <div className="justify-center flex items-center gap-2">
-                      <div className='bg-gray-900 rounded-full text-white'>
-                        <MdNavigateNext />
-                      </div>
-
-                      <span className="tracking-widest text-sm w-full">Detalles</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div className='bg-white rounded-2xl p-5 max-w-xl w-full'>
-                <div className='flex justify-end'>
-                  <AiFillStar className='text-yellow-400' />
-                </div>
-                <div className='flex gap-5 mb-5'>
-                  <img className='h-20' src="voice.png" alt="" />
-                  <p className='text-2xl text-gray-900 font-semibold'>
-                    Publicidad en <br /> Meta Ads</p>
-                </div>
-                <div>
-                  <p className='leading-8 mb-10'>
-                    Aprendé a vender más con anuncios en Facebook, Messenger e Instagram. Un curso práctico para obtener mejores resultados.
-                  </p>
-                </div>
-                <div className='flex gap-5 mb-8'>
-                  <div className='flex items-center gap-2'>
-                    <AiFillClockCircle />
-                    <p>
-                      6 horas
-                    </p>
-                  </div>
-                  <div className='flex items-center gap-2'>
-                    <BiSolidMessage />
-                    <p>
-                      6 modulos
-                    </p>
-                  </div>
-                  <div className='flex items-center gap-2'>
-                    <AiFillCheckSquare />
-                    <p>
-                      Certificado
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p className='font-bold text-4xl'>
-                    $5.230
-                  </p>
-                </div>
-                <div className="flex w-full mt-8 mr-5">
-                  <a className="w-full justify-center flex items-center text-white border-2 bg-pink-600 rounded-full text-lg font-semibold tracking-tighter py-3 px-6 transform scale-100 hover:scale-90 hover:bg-gray-900 transition-transform duration-300" href="#">
-                    <span className="text-sm tracking-widest">Comprar Cursos</span>
-                  </a>
-
-                  <a className="justify-center flex items-center cursor-pointer font-karla text-blue-900  rounded-full text-lg font-semibold tracking-tighter py-3 px-6  w-full transform scale-100 hover:scale-90 transition-transform duration-300" >
-                    <div className="justify-center flex items-center gap-2">
-                      <div className='bg-gray-900 rounded-full text-white'>
-                        <MdNavigateNext />
-                      </div>
-
-                      <span className="tracking-widest text-sm w-full">Detalles</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-
-            </div>
-
 
           </div>
         </section>
 
-        <section >
-          <div className='bg-white'>
-            <div className='flex justify-center gap-5 max-w-screen-2xl min-h-[90vh] mx-auto'>
-              <div className='flex items-center'>
-                <img src="publicidad.jpg" alt="" />
+        <section className='sticky top-1 z-1 shadow-2xl'>
+          <div className='bg-white '>
+            <div className='lg:flex justify-center  lg:gap-20 lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto'>
+              <div className='flex justify-center items-center mb-5 '>
+                <img className='h-40 lg:h-96 flex justify-center mt-10' src="publicidad.jpg" alt="" />
               </div>
-              <div className='flex justify-center items-center'>
+              <div className='flex justify-center items-center '>
                 <div className='flex-col justify-center items-center'>
-                  <div className='flex w-full gap-3 mb-10'>
-                    <div className='bg-cyan-500 rounded-full flex items-center p-1'>
+                  <div className='flex justify-center items-center lg:justify-start w-full gap-3 mb-10'>
+                    <div className='bg-cyan-500 rounded-full flex items-center  p-1'>
                       <GiPadlock className='text-white' />
                     </div>
-                    <p className='text-cyan-500 text-xl font-semibold'>
+                    <p className='text-cyan-500 lg:text-md font-semibold'>
                       Cursada Libre
                     </p>
                   </div>
-                  <div className='text-5xl mb-10 '>
-                    Modalidad <b>100% online y <br /> práctica</b>
-                  </div>
-                  <p className='leading-10 font-semibold text-xl mb-10'>
+                  <p className='lg:text-4xl text-2xl pb-5 lg:mb-3 flex-col justify-center text-center lg:text-left'>
+                    Modalidad <b>100% online <br className='hidden lg:block' /> y práctica</b>
+                  </p>
+                  <p className='lg:leading-8 text-center lg:text-left font-semibold lg:text-xl pb-5 lg:mb-3 justify-center '>
                     Formación con videos tutoriales grabados, lecturas, plantillas y <br /> ejercicios. En una plataforma sencilla y con rutas de <br /> aprendizaje claras.
                   </p>
-                  <button className='bg-blue-950 text-white px-12 py-4 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
-                    ¡Quiero aprender!
-                  </button>
+                  <div className='flex justify-center lg:justify-start pb-20'>
+                    <button className='bg-blue-950 text-white flex text-center px-5 py-1 lg:px-8 lg:py-2 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
+                      ¡Quiero aprender!
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <section className=' ' id='fixed'>
-          <div className='bg-white shadow-slate-950 shadow-2xl '>
-            <div className='flex justify-center gap-24 max-w-screen-2xl min-h-[90vh] mx-auto'>
-              <div className='flex items-center'>
-                <img src="certificaciones.png" alt="" />
+        <section className='sticky top-1 z-2 shadow-2xl'>
+          <div className='bg-white '>
+            <div className='lg:flex justify-center  lg:gap-20 lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto'>
+              <div className='flex justify-center items-center mb-5 '>
+                <img className='h-40 lg:h-96 flex justify-center mt-10' src="certificaciones.png" alt="" />
               </div>
-              <div className='flex justify-center items-center'>
+              <div className='flex justify-center items-center '>
                 <div className='flex-col justify-center items-center'>
-                  <div className='flex w-full gap-3 mb-10'>
-                    <div className='bg-pink-500 rounded-full flex items-center p-1'>
+                  <div className='flex justify-center items-center lg:justify-start w-full gap-3 mb-10'>
+                    <div className='bg-pink-500 rounded-full flex items-center  p-1'>
                       <AiFillTrophy className='text-white' />
                     </div>
-                    <p className='text-pink-500 text-xl font-semibold'>
-                      Formaciones certificadas
+                    <p className='text-pink-500 lg:text-md font-semibold'>
+                    Formaciones certificadas
                     </p>
                   </div>
-                  <div className='text-5xl mb-10 '>
-                    <b>Certificate</b>  en las áreas <br /> principales de Marketing
-                  </div>
-                  <p className='leading-10 font-semibold text-xl mb-10'>
-                    Impulsá tu currículum, tu credibilidad y tu carrera profesional. <br /> Como alumno podrás rendir un examen y obtener un certificado <br />de participación a tu nombre.
+                  <p className='lg:text-4xl text-2xl pb-5 lg:mb-3 flex-col justify-center text-center lg:text-left'>
+                    Certificate <b>en las áreas <br className='hidden lg:block' />principales de Marketing</b>
                   </p>
-                  <button className='bg-blue-950 text-white px-12 py-4 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
-                    Ver ejemplo
-                  </button>
+                  <p className='lg:leading-8 text-center lg:text-left font-semibold lg:text-xl pb-5 lg:mb-3 justify-center '>
+                    Impulsá tu currículum, tu credibilidad y tu carrera profesional.<br /> Como alumno podrás rendir un examen y obtener un certificado <br /> de participación a tu nombre.
+                  </p>
+                  <div className='flex justify-center lg:justify-start pb-20'>
+                    <button className='bg-blue-950 text-white flex text-center px-5 py-1 lg:px-8 lg:py-2 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
+                      Ver ejemplo
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -354,58 +366,62 @@ const MainComponent = () => {
         </section>
 
 
-        <section id='fixed'>
-          <div className='bg-white shadow-slate-950 shadow-2xl'>
-            <div className='flex justify-center gap-24 max-w-screen-2xl min-h-[90vh] mx-auto'>
-              <div className='flex items-center'>
-                <img src="personas.png" alt="" />
+
+        <section className='sticky top-1 z-3 shadow-2xl'>
+          <div className='bg-white  shadow-xl'>
+            <div className='lg:flex justify-center  lg:gap-20 lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto'>
+              <div className='flex justify-center items-center mb-5 '>
+                <img className='h-40 lg:h-96 flex justify-center mt-10' src="personas.png" alt="" />
               </div>
-              <div className='flex justify-center items-center'>
+              <div className='flex justify-center items-center '>
                 <div className='flex-col justify-center items-center'>
-                  <div className='flex w-full gap-3 mb-10'>
-                    <div className='bg-cyan-500 rounded-full flex items-center p-1'>
+                  <div className='flex justify-center items-center lg:justify-start w-full gap-3 mb-10'>
+                    <div className='bg-cyan-500 rounded-full flex items-center  p-1'>
                       <AiFillStar className='text-white' />
                     </div>
-                    <p className='text-cyan-500 text-xl font-semibold'>
+                    <p className='text-cyan-500 lg:text-md font-semibold'>
                       Nuestra experiencia
                     </p>
                   </div>
-                  <div className='text-5xl mb-10 '>
-                    Llevamos <b>+4 años <br /> formando a miles de <br /> personas</b>
-                  </div>
-                  <p className='leading-10 font-semibold text-xl mb-10'>
-                    Más del 80% de personas que aprenden con nosotros lo aplican <br /> en sus trabajos. Ayudamos a personas y empresas del mundo a <br /> lograr sus metas y objetivos.
+                  <p className='lg:text-4xl text-2xl pb-5 lg:mb-3 flex-col justify-center text-center lg:text-left'>
+                    Llevamos  <b>+4 años <br className='hidden lg:block' />formando a miles de</b> <br /> personas
                   </p>
-                  <button className='bg-blue-950 text-white px-12 py-4 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
-                    Ver testimonios
-                  </button>
+                  <p className='lg:leading-8 text-center lg:text-left font-semibold lg:text-xl pb-5 lg:mb-3 justify-center '>
+                    Más del 80% de personas que aprenden con nosotros lo aplican<br /> en sus trabajos. Ayudamos a personas y empresas del mundo a <br /> lograr sus metas y objetivos.
+                  </p>
+                  <div className='flex justify-center lg:justify-start pb-20'>
+                    <button className='bg-blue-950 text-white flex text-center px-5 py-1 lg:px-8 lg:py-2 font-semibold rounded-full transform scale-100 hover:scale-90 transition-transform duration-300 '>
+                      Ver testimonios
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section>
-          <div className='bg-white shadow-slate-950 shadow-2xl'>
-            <div className='flex justify-center gap-24 max-w-screen-2xl min-h-[90vh] mx-auto'>
-              <div className='flex items-center'>
-                <img src="amarillo.webp" alt="" />
+        
+        <section className='relative shadow-2xl'>
+          <div className='bg-white'>
+            <div className='lg:flex justify-center  lg:gap-20 lg:max-w-screen-2xl lg:min-h-[90vh] lg:mx-auto '>
+              <div className='flex justify-center items-center mb-5 '>
+                <img className='h-40 lg:h-96 flex justify-center mt-10' src="amarillo.webp" alt="" />
               </div>
-              <div className='flex justify-center items-center'>
-                <div className='flex-col justify-center items-center'>
-                  <div className='flex w-full gap-3 mb-10'>
-                    <div className='bg-blue-800 rounded-full flex items-center p-1'>
+              <div className='flex justify-center items-center '>
+                <div className='flex-col justify-center items-center '>
+                  <div className='flex justify-center items-center lg:justify-start w-full gap-3 mb-10'>
+                    <div className='bg-yellow-500 rounded-full flex items-center  p-1'>
                       <BsFillPersonCheckFill className='text-white' />
                     </div>
-                    <p className='text-blue-800 text-xl font-semibold'>
-                      Nuestra experiencia
+                    <p className='text-yellow-500 lg:text-md font-semibold'>
+                    Asistencia al alumno
                     </p>
                   </div>
-                  <div className='text-5xl mb-10 '>
-                    Soporte de <b>especialistas <br /> en cada área</b>
-                  </div>
-                  <p className='leading-10 font-semibold text-xl mb-10'>
-                    Te asistiremos durante todo tu proceso de aprendizaje. Nuestro <br /> equipo habla en tu idioma y entiende tus retos fácilmente.
+                  <p className='lg:text-4xl text-2xl pb-5 lg:mb-3 flex-col justify-center text-center lg:text-left'>
+                  Soporte de  <b>especialistas <br className='hidden lg:block' />en cada área</b>
+                  </p>
+                  <p className='lg:leading-8 text-center lg:text-left font-semibold lg:text-xl pb-5 lg:mb-3 justify-center '>
+                  Te asistiremos durante todo tu proceso de aprendizaje. Nuestro<br /> equipo habla en tu idioma y entiende tus retos fácilmente.
                   </p>
                 </div>
               </div>
@@ -413,7 +429,7 @@ const MainComponent = () => {
           </div>
         </section>
 
-        <section >
+        <section className='relative'>
           <div className='flex justify-center bg-cover bg-center p-20' style={{
             backgroundImage: 'url("imagen-fondo.jpg")'
           }}>
@@ -445,9 +461,9 @@ const MainComponent = () => {
           </div>
         </section>
 
-        <section>
+        <section className='relative'>
           <div className='bg-gray-100'>
-            <div className='mt-20 flex-col max-w-screen-2xl min-h-[90vh] mx-auto'>
+            <div className='pt-20 flex-col max-w-screen-2xl min-h-[90vh] mx-auto'>
               <p className='text-3xl flex justify-center items-center  mb-6'>
                 <b className='mr-2'>Recursos</b> gratuitos
               </p>
@@ -509,7 +525,7 @@ const MainComponent = () => {
           </div>
         </section>
 
-        <section>
+        <section className='relative'>
           <div className='bg-blue-900'>
             <div className='flex w-full'>
               <div className=' w-full'>
@@ -535,9 +551,9 @@ const MainComponent = () => {
           </div>
         </section>
 
-        <section>
-          <div className='bg-gray-100 mb-20'>
-            <div className='max-w-screen-2xl min-h-[90vh] mx-auto  mt-40'>
+        <section className='relative'>
+          <div className='bg-gray-100 pb-20'>
+            <div className='max-w-screen-2xl min-h-[90vh] mx-auto  pt-40'>
               <div className=''>
                 <div className='flex justify-center mb-5'>
                   <button className='text-white bg-cyan-400 px-4 py-1 rounded-md'>
@@ -624,7 +640,7 @@ const MainComponent = () => {
           </div>
         </section>
 
-        <section>
+        <section className='relative' >
           <div className='bg-blue-600'>
             <div className='max-w-screen-2xl min-h-[20vh] mx-auto flex items-center justify-center px-28'>
               <div className='w-full'>

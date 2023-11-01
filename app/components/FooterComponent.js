@@ -4,7 +4,7 @@ import { BiLogoTiktok } from "react-icons/bi"
 const FooterComponent = () => {
   return (
     <>
-      <footer >
+      <footer className="relative">
         <div className="bg-blue-900 ">
           <div className="flex max-w-screen-2xl min-h-[60vh] mx-auto py-20 px-10 gap-5 ">
             <div className="flex w-full">

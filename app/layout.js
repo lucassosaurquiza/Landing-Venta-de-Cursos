@@ -8,6 +8,7 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="23IcTcGCPc_dJTEyxaN1JpopMf9_crPKXJpIKo4qG3I" />
       <body className='bg-gray-100'>
         {children}
       </body>
